@@ -1,0 +1,212 @@
+.navbar-comp {
+    background: transparent linear-gradient(270deg, var(--unnamed-color-2c6af6) 0%, var(--unnamed-color-6a10cb) 100%) 0% 0% no-repeat padding-box;
+    background: transparent linear-gradient(270deg, #2C6AF6 0%, #6A10CB 100%) 0% 0% no-repeat padding-box;
+    opacity: 1;
+    align-items: center;
+    justify-content: center;
+}
+
+.navs-bar {
+    align-items: center;
+    justify-content: center;
+
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: white;
+}
+
+.top-img {
+    justify-content: space-around;
+}
+
+.sponsor-btn {
+    width: 200px;
+    box-sizing: border-box;
+    color: white;
+    padding: 11px;
+    background: transparent linear-gradient(90deg, #FF0844 0%, #FF8365 100%) 0% 0% no-repeat padding-box;
+    border-radius: 11px;
+    opacity: 1;
+}
+.section {
+    position: relative;
+    overflow: hidden;
+    height: 400px;
+    color: white;
+    
+    background-size: cover;
+    background-position: center;
+}
+
+.section .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.6);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+}
+.text-center,.text-head{
+    text-decoration: underline;
+    color: #ffb24d;
+}
+.section:hover .overlay {
+    opacity: 1;
+}
+.section:hover .text-center{
+    display: none;
+}
+.section h2 {
+    position: relative;
+    z-index: 1;
+    font-size: 24px;
+    margin: 0;
+}
+
+.section p {
+    position: relative;
+    z-index: 1;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+
+.gallery-section {
+    text-align: center;
+    padding: 2rem;
+    background-color: #f9f9f9;
+}
+
+.gallery-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.gallery-btn {
+    background-color: #ff4d4d;
+    color: white;
+    border-radius: 20px;
+    padding: 0.5rem 1rem;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.gallery-item {
+    padding: 1rem;
+}
+
+.carousel-indicators button {
+    background-color: #007bff;
+}
+.overlay-section {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 400px;
+    min-width: 80%;
+    color: white;
+   border-radius: 8px;
+    background-image: url('./assets/donate-bg.png');
+    background-size: cover;
+    background-position: center;
+  }
+
+  .overlay-gradient {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+   
+    z-index: 1;
+  }
+
+  .overlay-content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+  }
+
+  .overlay-content h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    
+  }
+
+  .btn-donate {
+    background-color: #ff5f57;
+    color: white;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: none;
+  }
+
+  .btn-donate:hover {
+    background-color: #ff4441;
+  }
+.testimonial-section {
+    background-color: #f8f9fa;
+    padding: 50px 0;
+    text-align: center;
+}
+.testimonial-title {
+    font-size: 1.5rem;
+    color: #0056b3;
+    font-weight: bold;
+}
+.testimonial-content {
+    font-size: 1rem;
+    color: #333;
+    max-width: 700px;
+    margin: 0 auto;
+}
+.testimonial-controls i {
+    font-size: 1.5rem;
+    color: #6c63ff;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+.testimonial-controls i:hover {
+    color: #4e47e5;
+}
+.footer {
+    background: transparent linear-gradient(95deg, #F0E8FA 0%, #C8D9F7 100%) 0% 0% no-repeat padding-box;
+    /* opacity: 0.42; */
+    padding: 30px 0;
+  }
+  .footer-column {
+    color: #000;
+  }
+  .footer-column h5 {
+    color: #003366;
+    margin-bottom: 20px;
+    font-weight: bold;
+  }
+  .footer-column ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  .footer-column ul li a {
+    color: #000;
+    text-decoration: none;
+  }
+  .footer-column ul li a:hover {
+    color: #003366;
+    text-decoration: underline;
+  }
