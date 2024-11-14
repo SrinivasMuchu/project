@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background: transparent linear-gradient(180deg, #C8D9F7 0%, #FBF8FF 100%) 0% 0% no-repeat padding-box;/* Light blue background */
+    }
+    .gallery-title {
+      font-weight: bold;
+      color: #1a3b7a;
+      padding: 20px 0;
+    }
+    .gallery-item img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+    .event-name-input {
+      margin-bottom: 20px;
+    }
+    .event-name-input input {
+      height: 50px;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <h3 class="gallery-title text-center">Gallery</h3>
+
+  <!-- Event 1 -->
+  <div class="event-name-input">
+    <input type="text" class="form-control" placeholder="Event Name">
+  </div>
+  <div class="row text-center mb-4">
+    <div class="col-md-4 gallery-item">
+      <img src="image1.jpg" alt="Event Image 1">
+    </div>
+    <div class="col-md-4 gallery-item">
+      <img src="image2.jpg" alt="Event Image 2">
+    </div>
+    <div class="col-md-4 gallery-item">
+      <img src="image3.jpg" alt="Event Image 3">
+    </div>
+  </div>
+
+  <!-- Event 2 -->
+  <div class="event-name-input">
+    <input type="text" class="form-control" placeholder="Event Name">
+  </div>
+
+  <!-- Event 3 -->
+  <div class="event-name-input"  height="150px">
+    <input type="text" class="form-control" placeholder="Event Name">
+  </div>
+  <div class="event-name-input">
+    <input type="text" class="form-control" placeholder="Event Name">
+  </div>
+  <div class="event-name-input">
+    <input type="text" class="form-control" placeholder="Event Name">
+  </div>
+  <div class="event-name-input">
+    <input type="text" class="form-control" placeholder="Event Name">
+  </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
