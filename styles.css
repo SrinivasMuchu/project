@@ -16,10 +16,19 @@
     color: white;
 }
 
-.top-img {
+/* .top-img {
     justify-content: space-around;
+} */
+.align-items-center {
+  align-items: center !important;
+  justify-content: space-around;
 }
-
+.common-edu{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
 .sponsor-btn {
     width: 200px;
     box-sizing: border-box;
@@ -55,7 +64,7 @@
     padding: 20px;
 }
 .text-center,.text-head{
-    text-decoration: underline;
+   
     color: #ffb24d;
 }
 .section:hover .overlay {
@@ -188,7 +197,7 @@
 .footer {
     background: transparent linear-gradient(95deg, #F0E8FA 0%, #C8D9F7 100%) 0% 0% no-repeat padding-box;
     /* opacity: 0.42; */
-    padding: 30px 0;
+    padding: 30px;
   }
   .footer-column {
     color: #000;

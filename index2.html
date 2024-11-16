@@ -1,0 +1,1078 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Members</title>
+  <link href="./styles.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+    rel="stylesheet">
+  <style>
+    body {
+      background-color: #e6effa;
+    }
+
+    .about-section {
+      background-color: #e0f0ff;
+      padding: 60px 0;
+    }
+
+    .about-title {
+      text-align: left;
+      font: normal normal bold 36px/50px Barlow;
+      letter-spacing: 0.36px;
+      color: #003580;
+      opacity: 1;
+    }
+
+    .about-text {
+      text-align: left;
+      letter-spacing: 0.18px;
+      color: #2B3543;
+      opacity: 1;
+    }
+
+    .founder-image {
+      width: 100%;
+      max-width: 200px;
+      border-radius: 28px;
+
+
+    }
+
+    .founder-name {
+      text-align: center;
+      font: normal normal bold 26px/36px Barlow;
+      letter-spacing: 0.26px;
+      color: #003580;
+      margin-top: 15px;
+    }
+
+    .founder-role {
+      text-align: center;
+      font: normal normal normal 26px/36px Barlow;
+      letter-spacing: 0.26px;
+      color: #FF8365;
+    }
+
+    .download-btn {
+      background: linear-gradient(45deg, #ff6a6a, #ff947b);
+      border: none;
+      color: white;
+      font-weight: 600;
+      padding: 10px 20px;
+      border-radius: 30px;
+      transition: background 0.3s;
+    }
+
+    .download-btn:hover {
+      background: linear-gradient(45deg, #ff947b, #ff6a6a);
+    }
+
+    /* Vision and Mission section styling */
+    .vision-mission-section {
+      background: linear-gradient(45deg, #563d7c, #6a5af9);
+      color: white;
+      padding: 60px 0;
+    }
+
+    .vision-mission-title {
+      font-size: 24px;
+      font-weight: 700;
+      margin-bottom: 20px;
+    }
+
+    .vision-mission-text {
+      font-size: 16px;
+      line-height: 1.6;
+    }
+
+    .member-card {
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      border-radius: 28px;
+      /* padding: 20px; */
+      text-align: center;
+      background-color: #fff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 400px;
+      cursor: pointer;
+    }
+
+    .member-card img {
+      border-radius: 50%;
+      width: 200px;
+      height: 200px;
+      object-fit: cover;
+      border: 1px solid grey;
+    }
+
+    .member-card .name {
+      font-weight: bold;
+      color: #2d6abf;
+      margin-top: 10px;
+    }
+
+    .member-card .role {
+      color: #ff5a5f;
+    }
+
+    .member-card:hover img {
+      display: none;
+    }
+
+    .member-card:hover .name,
+    .member-card:hover .role {
+      display: none;
+      opacity: 0;
+    }
+
+    .member-desc {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      text-align: center;
+      font: normal normal normal 18px/26px Lato;
+      letter-spacing: 0.18px;
+      color: #FCFDFF;
+      opacity: 1;
+    }
+
+    .member-card:hover .member-desc {
+      background: #2C6AF6 0% 0% no-repeat padding-box;
+      border-radius: 28px;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      opacity: 1;
+    }
+
+    .member-card .member-desc {
+      display: none;
+
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container-fluid">
+    <div class="row navbar align-items-center top-img">
+      <div class="col-md-6 d-flex align-items-center">
+        <a href="#" class="navbar-brand d-flex align-items-center">
+          <img src="./assets/logo.png" alt="Sai Educational Society Logo" style="width: 123px;height: 91px;">
+          <span class="ms-2 fs-4" style="width: 250px;">Sai Educational <br />Society</span>
+        </a>
+      </div>
+
+      <div class="col-md-3 text-end d-flex align-items-center">
+        <button class="btn sponsor-btn">Sponsor a Child</button>&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;
+        <p style="text-align: left;width: 300px;">For More Details Contact<br> +91 9704255536, +91
+          9704968368</p>
+      </div>
+      <!-- <div class="col-md-3 text-end contact-info">
+                
+            </div>
+       -->
+
+    </div>
+  </div>
+
+  <div>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light navbar-comp" style="height: 60px;box-sizing: border-box;">
+      <div class="container-fluid">
+        <div class="collapse navbar-collapse navs-bar" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Sri Satya Sai Vidya Vihar</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Primary Health Center</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Skills Development Center</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Get Involved</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
+  <img src="./assets/society-page2-img.jpg" alt="" width="100%" height="400px" />
+  <section class="about-section text-center">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <h2 class="about-title">About Sai Educational Society</h2>
+          <p class="about-text">
+            At Sai Educational Society, we believe in the transformative power of <strong>education, healthcare, and
+              skill development center</strong>. Founded with a vision to empower individuals and uplift communities, we
+            are dedicated to providing <strong>FREE services</strong> in these essential areas, ensuring equitable
+            access to opportunities for all.
+          </p>
+        </div>
+        <div class="col-md-6 text-center ">
+          <img src="./assets/owner-img.png" alt="Founder" class="founder-image">
+          <h3 class="founder-name">Late Sri Nimmagadda Lakshmi Prasad</h3>
+          <p class="founder-role">Founder President</p>
+          <button class="download-btn">Download Article</button>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="vision-mission-section text-center">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <h3 class="vision-mission-title">Our Vision</h3>
+          <p class="vision-mission-text">
+            We aspire to cultivate a society that can rise and empower itself through enhanced education, skill
+            development, and a healthier lifestyle.
+          </p>
+        </div>
+        <div class="col-md-6">
+          <h3 class="vision-mission-title">Our Mission</h3>
+          <p class="vision-mission-text">
+            To empower our society with exemplary education and healthcare, and to foster the capability to lead
+            fulfilling, independent lives without discrimination.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="container mt-5">
+
+    <h3 class="text-center">Sai Educational Society<br>MEMBERS</h3>
+    <div class="row mt-4">
+      <div class="col-md-4 mb-4">
+        <div class="member-card">
+          <img src="https://via.placeholder.com/80" alt="Profile Picture">
+          <div class="name">Smt. K Kalpana Dutt</div>
+          <div class="role">President</div>
+          <div class="member-desc">
+            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+              tempor invidunt ut labore et dolore
+              magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
+              clita
+              kasd
+              gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur
+              sadipscing
+              elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+              At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
+              sanctus
+              est</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="member-card">
+          <img src="https://via.placeholder.com/80" alt="Profile Picture">
+          <div class="name">Smt. K Kalpana Dutt</div>
+          <div class="role">President</div>
+          <div class="member-desc">
+            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+              tempor invidunt ut labore et dolore
+              magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
+              clita
+              kasd
+              gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur
+              sadipscing
+              elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+              At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
+              sanctus
+              est</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="member-card">
+          <img src="https://via.placeholder.com/80" alt="Profile Picture">
+          <div class="name">Smt. K Kalpana Dutt</div>
+          <div class="role">President</div>
+          <div class="member-desc">
+            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+              tempor invidunt ut labore et dolore
+              magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
+              clita
+              kasd
+              gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur
+              sadipscing
+              elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+              At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
+              sanctus
+              est</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="member-card">
+          <img src="https://via.placeholder.com/80" alt="Profile Picture">
+          <div class="name">Smt. K Kalpana Dutt</div>
+          <div class="role">President</div>
+          <div class="member-desc">
+            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+              tempor invidunt ut labore et dolore
+              magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
+              clita
+              kasd
+              gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur
+              sadipscing
+              elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+              At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
+              sanctus
+              est</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="member-card">
+          <img src="https://via.placeholder.com/80" alt="Profile Picture">
+          <div class="name">Smt. K Kalpana Dutt</div>
+          <div class="role">President</div>
+          <div class="member-desc">
+            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+              tempor invidunt ut labore et dolore
+              magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
+              clita
+              kasd
+              gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur
+              sadipscing
+              elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+              At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
+              sanctus
+              est</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="member-card">
+          <img src="https://via.placeholder.com/80" alt="Profile Picture">
+          <div class="name">Smt. K Kalpana Dutt</div>
+          <div class="role">President</div>
+          <div class="member-desc">
+            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+              tempor invidunt ut labore et dolore
+              magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
+              clita
+              kasd
+              gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur
+              sadipscing
+              elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+              At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
+              sanctus
+              est</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="member-card">
+          <img src="https://via.placeholder.com/80" alt="Profile Picture">
+          <div class="name">Smt. K Kalpana Dutt</div>
+          <div class="role">President</div>
+          <div class="member-desc">
+            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+              tempor invidunt ut labore et dolore
+              magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
+              clita
+              kasd
+              gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur
+              sadipscing
+              elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+              At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
+              sanctus
+              est</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="member-card">
+          <img src="https://via.placeholder.com/80" alt="Profile Picture">
+          <div class="name">Smt. K Kalpana Dutt</div>
+          <div class="role">President</div>
+          <div class="member-desc">
+            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+              tempor invidunt ut labore et dolore
+              magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
+              clita
+              kasd
+              gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur
+              sadipscing
+              elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+              At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
+              sanctus
+              est</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="member-card">
+          <img src="https://via.placeholder.com/80" alt="Profile Picture">
+          <div class="name">Smt. K Kalpana Dutt</div>
+          <div class="role">President</div>
+          <div class="member-desc">
+            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+              tempor invidunt ut labore et dolore
+              magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
+              clita
+              kasd
+              gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur
+              sadipscing
+              elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+              At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
+              sanctus
+              est</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="member-card">
+          <img src="https://via.placeholder.com/80" alt="Profile Picture">
+          <div class="name">Smt. K Kalpana Dutt</div>
+          <div class="role">President</div>
+          <div class="member-desc">
+            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+              tempor invidunt ut labore et dolore
+              magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
+              clita
+              kasd
+              gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur
+              sadipscing
+              elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+              At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
+              sanctus
+              est</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="member-card">
+          <img src="https://via.placeholder.com/80" alt="Profile Picture">
+          <div class="name">Smt. K Kalpana Dutt</div>
+          <div class="role">President</div>
+          <div class="member-desc">
+            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+              tempor invidunt ut labore et dolore
+              magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
+              clita
+              kasd
+              gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur
+              sadipscing
+              elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+              At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
+              sanctus
+              est</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="member-card">
+          <img src="https://via.placeholder.com/80" alt="Profile Picture">
+          <div class="name">Smt. K Kalpana Dutt</div>
+          <div class="role">President</div>
+          <div class="member-desc">
+            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+              tempor invidunt ut labore et dolore
+              magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
+              clita
+              kasd
+              gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur
+              sadipscing
+              elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+              At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
+              sanctus
+              est</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="member-card">
+          <img src="https://via.placeholder.com/80" alt="Profile Picture">
+          <div class="name">Smt. K Kalpana Dutt</div>
+          <div class="role">President</div>
+          <div class="member-desc">
+            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+              tempor invidunt ut labore et dolore
+              magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
+              clita
+              kasd
+              gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur
+              sadipscing
+              elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+              At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
+              sanctus
+              est</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="member-card">
+          <img src="https://via.placeholder.com/80" alt="Profile Picture">
+          <div class="name">Smt. K Kalpana Dutt</div>
+          <div class="role">President</div>
+          <div class="member-desc">
+            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+              tempor invidunt ut labore et dolore
+              magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
+              clita
+              kasd
+              gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur
+              sadipscing
+              elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+              At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
+              sanctus
+              est</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="member-card">
+          <img src="https://via.placeholder.com/80" alt="Profile Picture">
+          <div class="name">Smt. K Kalpana Dutt</div>
+          <div class="role">President</div>
+          <div class="member-desc">
+            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+              tempor invidunt ut labore et dolore
+              magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
+              clita
+              kasd
+              gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur
+              sadipscing
+              elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+              At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
+              sanctus
+              est</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="member-card">
+          <img src="https://via.placeholder.com/80" alt="Profile Picture">
+          <div class="name">Smt. K Kalpana Dutt</div>
+          <div class="role">President</div>
+          <div class="member-desc">
+            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+              tempor invidunt ut labore et dolore
+              magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
+              clita
+              kasd
+              gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur
+              sadipscing
+              elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+              At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
+              sanctus
+              est</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="member-card">
+          <img src="https://via.placeholder.com/80" alt="Profile Picture">
+          <div class="name">Smt. K Kalpana Dutt</div>
+          <div class="role">President</div>
+          <div class="member-desc">
+            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+              tempor invidunt ut labore et dolore
+              magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
+              clita
+              kasd
+              gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur
+              sadipscing
+              elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+              At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
+              sanctus
+              est</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="member-card">
+          <img src="https://via.placeholder.com/80" alt="Profile Picture">
+          <div class="name">Smt. K Kalpana Dutt</div>
+          <div class="role">President</div>
+          <div class="member-desc">
+            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+              tempor invidunt ut labore et dolore
+              magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
+              clita
+              kasd
+              gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur
+              sadipscing
+              elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+              At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
+              sanctus
+              est</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="member-card">
+          <img src="https://via.placeholder.com/80" alt="Profile Picture">
+          <div class="name">Smt. K Kalpana Dutt</div>
+          <div class="role">President</div>
+          <div class="member-desc">
+            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+              tempor invidunt ut labore et dolore
+              magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
+              clita
+              kasd
+              gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur
+              sadipscing
+              elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+              At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
+              sanctus
+              est</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="member-card">
+          <img src="https://via.placeholder.com/80" alt="Profile Picture">
+          <div class="name">Smt. K Kalpana Dutt</div>
+          <div class="role">President</div>
+          <div class="member-desc">
+            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+              tempor invidunt ut labore et dolore
+              magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
+              clita
+              kasd
+              gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur
+              sadipscing
+              elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+              At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
+              sanctus
+              est</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="member-card">
+          <img src="https://via.placeholder.com/80" alt="Profile Picture">
+          <div class="name">Smt. K Kalpana Dutt</div>
+          <div class="role">President</div>
+          <div class="member-desc">
+            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+              tempor invidunt ut labore et dolore
+              magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
+              clita
+              kasd
+              gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur
+              sadipscing
+              elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+              At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
+              sanctus
+              est</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="member-card">
+          <img src="https://via.placeholder.com/80" alt="Profile Picture">
+          <div class="name">Smt. K Kalpana Dutt</div>
+          <div class="role">President</div>
+          <div class="member-desc">
+            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+              tempor invidunt ut labore et dolore
+              magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
+              clita
+              kasd
+              gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur
+              sadipscing
+              elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+              At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
+              sanctus
+              est</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="member-card">
+          <img src="https://via.placeholder.com/80" alt="Profile Picture">
+          <div class="name">Smt. K Kalpana Dutt</div>
+          <div class="role">President</div>
+          <div class="member-desc">
+            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+              tempor invidunt ut labore et dolore
+              magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
+              clita
+              kasd
+              gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur
+              sadipscing
+              elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+              At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
+              sanctus
+              est</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="member-card">
+          <img src="https://via.placeholder.com/80" alt="Profile Picture">
+          <div class="name">Smt. K Kalpana Dutt</div>
+          <div class="role">President</div>
+          <div class="member-desc">
+            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+              tempor invidunt ut labore et dolore
+              magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
+              clita
+              kasd
+              gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur
+              sadipscing
+              elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+              At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
+              sanctus
+              est</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="member-card">
+          <img src="https://via.placeholder.com/80" alt="Profile Picture">
+          <div class="name">Smt. K Kalpana Dutt</div>
+          <div class="role">President</div>
+          <div class="member-desc">
+            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+              tempor invidunt ut labore et dolore
+              magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
+              clita
+              kasd
+              gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur
+              sadipscing
+              elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+              At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
+              sanctus
+              est</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="member-card">
+          <img src="https://via.placeholder.com/80" alt="Profile Picture">
+          <div class="name">Smt. K Kalpana Dutt</div>
+          <div class="role">President</div>
+          <div class="member-desc">
+            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+              tempor invidunt ut labore et dolore
+              magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
+              clita
+              kasd
+              gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur
+              sadipscing
+              elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+              At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
+              sanctus
+              est</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="member-card">
+          <img src="https://via.placeholder.com/80" alt="Profile Picture">
+          <div class="name">Smt. K Kalpana Dutt</div>
+          <div class="role">President</div>
+          <div class="member-desc">
+            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+              tempor invidunt ut labore et dolore
+              magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
+              clita
+              kasd
+              gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur
+              sadipscing
+              elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+              At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
+              sanctus
+              est</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="member-card">
+          <img src="https://via.placeholder.com/80" alt="Profile Picture">
+          <div class="name">Smt. K Kalpana Dutt</div>
+          <div class="role">President</div>
+          <div class="member-desc">
+            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+              tempor invidunt ut labore et dolore
+              magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
+              clita
+              kasd
+              gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur
+              sadipscing
+              elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+              At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
+              sanctus
+              est</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="member-card">
+          <img src="./assets//pdf-icon.png" alt="Profile Picture">
+          <div class="name">Smt. K Kalpana Dutt</div>
+          <div class="role">President</div>
+          <div class="member-desc">
+            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+              tempor invidunt ut labore et dolore
+              magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
+              clita
+              kasd
+              gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur
+              sadipscing
+              elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+              At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
+              sanctus
+              est</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="member-card">
+          <img src="https://via.placeholder.com/80" alt="Profile Picture">
+          <div class="name">Smt. K Kalpana Dutt</div>
+          <div class="role">President</div>
+          <div class="member-desc">
+            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+              tempor invidunt ut labore et dolore
+              magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
+              clita
+              kasd
+              gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur
+              sadipscing
+              elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+              At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
+              sanctus
+              est</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="member-card">
+          <img src="https://via.placeholder.com/80" alt="Profile Picture">
+          <div class="name">Smt. K Kalpana Dutt</div>
+          <div class="role">President</div>
+          <div class="member-desc">
+            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+              tempor invidunt ut labore et dolore
+              magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
+              clita
+              kasd
+              gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur
+              sadipscing
+              elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+              At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
+              sanctus
+              est</p>
+          </div>
+        </div>
+      </div>
+    
+    </div>
+  </div>
+  <div class="container">
+    <div class="row">
+      <!-- Education Section -->
+      <div class="col-md-4 section common-edu" style="background-image: url('./assets/gallery1.png');">
+        <div class="overlay">
+            <div>
+                <h2 class="text-head">Education</h2>
+                <p>We believe education is the foundation of development and prosperity. Our primary initiative,
+                    Sri Sathya Sai Vidya Vihar, focuses on providing high-quality education to children from
+                    underprivileged sections of the community. By eliminating financial barriers, we offer
+                    free educational resources, scholarships, and comprehensive support to foster an environment
+                    where learning thrives. Our innovative educational
+                    strategies are designed to prepare young minds for a future where they can be adaptive,
+                    thoughtful, and impactful.</p>
+            </div>
+        </div>
+        <h2 class="text-center">Education</h2>
+    </div>
+
+    <!-- Health Care Section -->
+    <div class="col-md-4 section common-edu" style="background-image: url('./assets/gallery2.png');">
+        <div class="overlay">
+            <div>
+                <h2 class="text-head">Health Care</h2>
+                <p>Good health underpins societal well-being and productivity. Our Primary Health Centre
+                    delivers essential healthcare services at no cost, encompassing medical consultations,
+                    screenings, and treatments. Our dedicated healthcare team is relentless
+                    in their pursuit of wellness and preventive care, ensuring accessible and quality medical
+                    attention for all.</p>
+            </div>
+        </div>
+        <h2 class="text-center">Health Care</h2>
+    </div>
+
+    <!-- Skill Development Centre Section -->
+    <div class="col-md-4 section common-edu" style="background-image: url('./assets/gallery3.png');">
+        <div class="overlay">
+            <div>
+                <h2 class="text-head">Skill Development Centre</h2>
+                <p>In today’s world, relevant skills are the keys to personal and professional success.
+                    SES’s Skill Development Centre provides free vocational training, workshops, and mentorship,
+                    enhancing job readiness and entrepreneurial spirit.
+                    By empowering individuals with necessary skills, we are building a more inclusive and
+                    prosperous society.</p>
+            </div>
+        </div>
+        <h2 class="text-center">Skill Development Centre</h2>
+    </div>
+    </div>
+  </div>
+  <section class="gallery-section">
+    <div class="container">
+      <div class="d-flex justify-content-between align-items-center mb-3">
+        <div class="gallery-title">Sai Educational Society <br><span class="text-primary">Gallery</span></div>
+        <a href="#" class="gallery-btn">VIEW ALL</a>
+      </div>
+
+      <div id="galleryCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="d-flex justify-content-center">
+              <img src="./assets/gallery1.png" class="gallery-item img-fluid rounded" alt="Event 1"
+                style="max-height: 300px;">
+              <img src="./assets/gallery2.png" class="gallery-item img-fluid rounded" alt="Event 1"
+                style="max-height: 300px;">
+              <img src="./assets/gallery3.png" class="gallery-item img-fluid rounded" alt="Event 1"
+                style="max-height: 300px;">
+            </div>
+
+          </div>
+          <div class="carousel-item">
+            <div class="d-flex justify-content-center">
+              <img src="./assets/gallery2.png" class="gallery-item img-fluid rounded" alt="Event 1"
+                style="max-height: 300px;">
+              <img src="./assets/gallery1.png" class="gallery-item img-fluid rounded" alt="Event 1"
+                style="max-height: 300px;">
+
+              <img src="./assets/gallery3.png" class="gallery-item img-fluid rounded" alt="Event 1"
+                style="max-height: 300px;">
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="d-flex justify-content-center">
+              <img src="./assets/gallery2.png" class="gallery-item img-fluid rounded" alt="Event 1"
+                style="max-height: 300px;">
+              <img src="./assets/gallery1.png" class="gallery-item img-fluid rounded" alt="Event 1"
+                style="max-height: 300px;">
+
+              <img src="./assets/gallery3.png" class="gallery-item img-fluid rounded" alt="Event 1"
+                style="max-height: 300px;">
+            </div>
+          </div>
+        </div>
+
+        <!-- Carousel Indicators -->
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#galleryCarousel" data-bs-slide-to="0" class="active"
+            aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#galleryCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#galleryCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="container-fluid" style="width: 100%;display: flex;align-items: center;justify-content: center;">
+    <section class="overlay-section">
+
+      <div class="overlay-content">
+        <h2>Embark with us on this transformative journey to<br> educate, heal, and empower.
+          Together, we can<br> build a world that is full of opportunities.</h2>
+        <button class="btn sponsor-btn">Donate Now</button>
+      </div>
+    </section>
+  </div>
+
+
+  <div class="testimonial-section">
+    <h2 class="text-muted">Sai Educational Society</h2>
+    <p class="testimonial-title">Testimonials</p>
+    <p class="testimonial-content">
+      Lorem ipsum dolor sit amet, consectetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
+      labore
+      et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea
+      rebum.
+      Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+    </p>
+    <div class="d-flex justify-content-center align-items-center testimonial-controls">
+      <i class="bi bi-chevron-left me-3"></i>
+      <i class="bi bi-chevron-right ms-3"></i>
+    </div>
+  </div>
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+
+        <!-- Address Column -->
+        <div class="col-md-3 footer-column">
+          <img src="./assets/logo.png" alt="Logo" style="width: 50px; height: auto;">
+          <p>Satya Sai Nagar<br>Near Society Colony<br>Macherla - 522426,<br>Guntur District, Andhra
+            Pradesh.
+          </p>
+          <p> 9704255536, 9704968368</p>
+        </div>
+
+        <!-- Our Services Column -->
+        <div class="col-md-3 footer-column">
+          <h5>Our Services</h5>
+          <ul>
+            <li><a href="#">Sri Satya Sai Vidya Vihar</a></li>
+            <li><a href="#">Primary Health Centre</a></li>
+            <li><a href="#">Skill Development Centre</a></li>
+          </ul>
+        </div>
+
+        <!-- Quick Links Column -->
+        <div class="col-md-3 footer-column">
+          <h5>Quick Links</h5>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Get Involved</a></li>
+            <li><a href="#">Gallery</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Social Media Column -->
+        <div class="col-md-3 footer-column">
+          <h5>Social Media</h5>
+          <ul>
+            <li><a href="#"><img src="facebook-icon.png" alt="Facebook"> sesmacherla</a></li>
+            <!-- Replace with icon paths -->
+            <li><a href="#"><img src="youtube-icon.png" alt="YouTube"> @sesmacherla</a></li>
+            <li><a href="#"><img src="instagram-icon.png" alt="Instagram"> #sesmacherla</a></li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

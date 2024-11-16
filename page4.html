@@ -1,91 +1,397 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Primary Health Centre</title>
+  <link rel="stylesheet" href="/styles.css">
   <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+    rel="stylesheet">
   <style>
     body {
       background-color: #e5eefc;
       font-family: Arial, sans-serif;
     }
+
     .container {
       max-width: 80%;
-    
+
       padding: 30px;
       margin-top: 50px;
-      
+
     }
+
     h1 {
       color: #0056b3;
       font-weight: bold;
     }
+
     .section-title {
-      color: #0056b3;
-      font-weight: bold;
-      margin-top: 30px;
-      font-size: 1.25rem;
+      text-align: left;
+      font: normal normal bold 36px/50px Barlow;
+      letter-spacing: 0.36px;
+      color: #003580;
+      opacity: 1;
     }
-     .diagnostic-facilities, .team {
+
+    .section-sub-title {
+      text-align: left;
+      font: normal normal bold 24px/50px Barlow;
+      letter-spacing: 0.24px;
+      color: #003580;
+      opacity: 1;
+    }
+
+    .section-para {
+      text-align: left;
+      font: normal normal normal 18px/30px Lato;
+      letter-spacing: 0.18px;
+      color: #2B3543;
+      opacity: 1;
+    }
+
+    .diagnostic-facilities,
+    .team {
       background-color: #f8f9fa;
       border-radius: 8px;
       padding: 20px;
       margin-top: 15px;
       border: 1px solid grey;
     }
-    .services ul, .diagnostic-facilities ul {
+
+    .services ul,
+    .diagnostic-facilities ul {
       padding-left: 20px;
     }
+
     .icon {
       color: #007bff;
       font-size: 1.2rem;
     }
+
+    .terms-cont {
+      display: flex;
+      gap: 10px;
+      align-items: center;
+    }
   </style>
 </head>
+
 <body>
+  <div class="container-fluid">
+    <div class="row navbar align-items-center top-img">
+      <div class="col-md-6 d-flex align-items-center">
+        <a href="#" class="navbar-brand d-flex align-items-center">
+          <img src="./assets/logo.png" alt="Sai Educational Society Logo" style="width: 123px;height: 91px;">
+          <span class="ms-2 fs-4" style="width: 250px;">Sai Educational <br />Society</span>
+        </a>
+      </div>
 
-<div class="container">
-  <h1>Primary Health Centre</h1>
-  <p>
-    At Sai Educational Services, we uphold the belief that a healthy population is pivotal to fostering a healthier society. To this end, we launched our Primary Health Centre in November 2019 within the Sai Educational Society premises. Initially closed due to the COVID-19 pandemic, the centre successfully reopened on November 23, 2021, and has since been an essential healthcare resource for the local community.
-  </p>
+      <div class="col-md-3 text-end d-flex align-items-center">
+        <button class="btn sponsor-btn">Sponsor a Child</button>&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;
+        <p style="text-align: left;width: 300px;">For More Details Contact<br> +91 9704255536, +91
+          9704968368</p>
+      </div>
+      <!-- <div class="col-md-3 text-end contact-info">
+                
+            </div>
+       -->
 
-  <div class="section-title">Services Offered:</div>
-  <div class="services">
-    <ul>
-      <li><strong>Medical Consultations, Laboratory Tests, and Medications:</strong> Provided free of charge to approximately 700 to 800 visitors each month.</li>
-      <li><strong>Comprehensive Care:</strong> Treatment for conditions such as typhoid, malaria, respiratory infections, common colds, fevers of unknown origin, injuries from accidents, allergies, diabetes, hypertension, and various infections.</li>
-    </ul>
+    </div>
   </div>
 
-  <div class="section-title">Diagnostic Facilities:</div>
-  <div class="diagnostic-facilities">
-    <ul class="row">
-      <li class="col-md-3">Hemoglobin percentage (HB%)</li>
-      <li class="col-md-3">VDRL (syphilis testing)</li>
-      <li class="col-md-3">Widal test for typhoid</li>
-      <li class="col-md-3">Serum creatinine levels</li>
-      <li class="col-md-3">Random blood sugar levels</li>
-      <li class="col-md-3">Malaria parasites detection</li>
-      <li class="col-md-3">Serum bilirubin levels</li>
-      <li class="col-md-3">Urine analysis</li>
-    </ul>
+  <div>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light navbar-comp" style="height: 60px;box-sizing: border-box;">
+      <div class="container-fluid">
+        <div class="collapse navbar-collapse navs-bar" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Sri Satya Sai Vidya Vihar</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Primary Health Center</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Skills Development Center</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Get Involved</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
+  <img src="./assets/health-image.jpg" alt="" width="100%" height="400px" />
+  <div class="container">
+    <h1 class="section-title">Primary Health Centre</h1>
+    <p class="section-para">
+      At Sai Educational Services, we uphold the belief that a healthy population is pivotal to fostering a healthier
+      society. To this end, we launched our Primary Health Centre in November 2019 within the Sai Educational Society
+      premises. Initially closed due to the COVID-19 pandemic, the centre successfully reopened on November 23, 2021,
+      and has since been an essential healthcare resource for the local community.
+    </p>
+
+    <div class="section-sub-title">Services Offered:</div>
+    <div class="services">
+      <ul>
+        <li class="section-para"><strong>Medical Consultations, Laboratory Tests, and Medications:</strong> Provided
+          free of charge to approximately 700 to 800 visitors each month.</li>
+        <li class="section-para"><strong>Comprehensive Care:</strong> Treatment for conditions such as typhoid, malaria,
+          respiratory infections, common colds, fevers of unknown origin, injuries from accidents, allergies, diabetes,
+          hypertension, and various infections.</li>
+      </ul>
+    </div>
+
+    <div class="section-sub-title">Diagnostic Facilities:</div>
+    <div class="diagnostic-facilities">
+      <ul class="row section-para">
+        <li class="col-md-3">Hemoglobin percentage (HB%)</li>
+        <li class="col-md-3">VDRL (syphilis testing)</li>
+        <li class="col-md-3">Widal test for typhoid</li>
+        <li class="col-md-3">Serum creatinine levels</li>
+        <li class="col-md-3">Random blood sugar levels</li>
+        <li class="col-md-3">Malaria parasites detection</li>
+        <li class="col-md-3">Serum bilirubin levels</li>
+        <li class="col-md-3">Urine analysis</li>
+      </ul>
+    </div>
+
+
+    <div class="section-sub-title">Team and Infrastructure:</div>
+    <div class="team">
+      <div class="section-para mt-3 terms-cont">
+        <img src="./assets//terms-icons1.svg" />
+        <p><strong>Qualified Medical Team:</strong> Includes an experienced doctor holding an MBBS degree, a certified
+          nurse, and a trained lab technician. </p>
+      </div>
+
+
+      <div class="section-para mt-3 terms-cont">
+        <img src="./assets//terms-icons2.svg" />
+        <p><strong>Support Staff:</strong> Additional personnel to assist in medical and administrative duties. </p>
+      </div>
+
+
+      <div class="section-para mt-3 terms-cont">
+        <img src="./assets//terms-icons3.svg" />
+        <p><strong>Facilities:</strong> The Health Centre is housed in permanent buildings owned by Sai Educational
+          Society, located in a spacious, hygienically maintained compound. </p>
+      </div>
+
+
+      <div class="section-para mt-3 terms-cont">
+        <img src="./assets//terms-icons4.svg" />
+        <p><strong>Operating Hours:</strong> Open 4 to 5 hours daily, equipped with all necessary medical testing
+          equipment. </p>
+      </div>
+
+
+    </div>
   </div>
   
+    <div class="row">
+      <!-- Education Section -->
+      <div class="col-md-4 section common-edu" style="background-image: url('./assets/gallery1.png');">
+        <div class="overlay">
+          <div>
+            <h2 class="text-head">Education</h2>
+            <p>We believe education is the foundation of development and prosperity. Our primary initiative,
+              Sri Sathya Sai Vidya Vihar, focuses on providing high-quality education to children from
+              underprivileged sections of the community. By eliminating financial barriers, we offer
+              free educational resources, scholarships, and comprehensive support to foster an environment
+              where learning thrives. Our innovative educational
+              strategies are designed to prepare young minds for a future where they can be adaptive, thoughtful, and
+              impactful.</p>
+          </div>
+        </div>
+        <h2 class="text-center">Education</h2>
+      </div>
 
-  <div class="section-title">Team and Infrastructure:</div>
-  <div class="team">
-    <div><i class="icon fas fa-user-md"></i> <strong>Qualified Medical Team:</strong> Includes an experienced doctor holding an MBBS degree, a certified nurse, and a trained lab technician.</div>
-    <div class="mt-3"><i class="icon fas fa-user-plus"></i> <strong>Support Staff:</strong> Additional personnel to assist in medical and administrative duties.</div>
-    <div class="mt-3"><i class="icon fas fa-building"></i> <strong>Facilities:</strong> The Health Centre is housed in permanent buildings owned by Sai Educational Society, located in a spacious, hygienically maintained compound.</div>
-    <div class="mt-3"><i class="icon fas fa-clock"></i> <strong>Operating Hours:</strong> Open 4 to 5 hours daily, equipped with all necessary medical testing equipment.</div>
+      <!-- Health Care Section -->
+      <div class="col-md-4 section common-edu" style="background-image: url('./assets/gallery2.png');">
+        <div class="overlay">
+          <div>
+            <h2 class="text-head">Health Care</h2>
+            <p>Good health underpins societal well-being and productivity. Our Primary Health Centre
+              delivers essential healthcare services at no cost, encompassing medical consultations,
+              screenings, and treatments. Our dedicated healthcare team is relentless
+              in their pursuit of wellness and preventive care, ensuring accessible and quality medical attention for
+              all.</p>
+          </div>
+        </div>
+        <h2 class="text-center">Health Care</h2>
+      </div>
+
+      <!-- Skill Development Centre Section -->
+      <div class="col-md-4 section common-edu" style="background-image: url('./assets/gallery3.png');">
+        <div class="overlay">
+          <div>
+            <h2 class="text-head">Skill Development Centre</h2>
+            <p>In today’s world, relevant skills are the keys to personal and professional success.
+              SES’s Skill Development Centre provides free vocational training, workshops, and mentorship,
+              enhancing job readiness and entrepreneurial spirit.
+              By empowering individuals with necessary skills, we are building a more inclusive and prosperous society.
+            </p>
+          </div>
+        </div>
+        <h2 class="text-center">Skill Development Centre</h2>
+      </div>
+    </div>
+  
+  <section class="gallery-section">
+    <div class="container">
+      <div class="d-flex justify-content-between align-items-center mb-3">
+        <div class="gallery-title">Sai Educational Society <br><span class="text-primary">Gallery</span></div>
+        <a href="#" class="gallery-btn">VIEW ALL</a>
+      </div>
+
+      <div id="galleryCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="d-flex justify-content-center">
+              <img src="./assets/gallery1.png" class="gallery-item img-fluid rounded" alt="Event 1"
+                style="max-height: 300px;">
+              <img src="./assets/gallery2.png" class="gallery-item img-fluid rounded" alt="Event 1"
+                style="max-height: 300px;">
+              <img src="./assets/gallery3.png" class="gallery-item img-fluid rounded" alt="Event 1"
+                style="max-height: 300px;">
+            </div>
+
+          </div>
+          <div class="carousel-item">
+            <div class="d-flex justify-content-center">
+              <img src="./assets/gallery2.png" class="gallery-item img-fluid rounded" alt="Event 1"
+                style="max-height: 300px;">
+              <img src="./assets/gallery1.png" class="gallery-item img-fluid rounded" alt="Event 1"
+                style="max-height: 300px;">
+
+              <img src="./assets/gallery3.png" class="gallery-item img-fluid rounded" alt="Event 1"
+                style="max-height: 300px;">
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="d-flex justify-content-center">
+              <img src="./assets/gallery2.png" class="gallery-item img-fluid rounded" alt="Event 1"
+                style="max-height: 300px;">
+              <img src="./assets/gallery1.png" class="gallery-item img-fluid rounded" alt="Event 1"
+                style="max-height: 300px;">
+
+              <img src="./assets/gallery3.png" class="gallery-item img-fluid rounded" alt="Event 1"
+                style="max-height: 300px;">
+            </div>
+          </div>
+        </div>
+
+        <!-- Carousel Indicators -->
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#galleryCarousel" data-bs-slide-to="0" class="active"
+            aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#galleryCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#galleryCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="container-fluid" style="width: 100%;display: flex;align-items: center;justify-content: center;">
+    <section class="overlay-section">
+
+      <div class="overlay-content">
+        <h2>Embark with us on this transformative journey to<br> educate, heal, and empower.
+          Together, we can<br> build a world that is full of opportunities.</h2>
+        <button class="btn sponsor-btn">Donate Now</button>
+      </div>
+    </section>
   </div>
-</div>
 
-<script src="https://kit.fontawesome.com/a076d05399.js"></script>
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  <div class="testimonial-section">
+    <h2 class="text-muted">Sai Educational Society</h2>
+    <p class="testimonial-title">Testimonials</p>
+    <p class="testimonial-content">
+      Lorem ipsum dolor sit amet, consectetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
+      labore
+      et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea
+      rebum.
+      Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+    </p>
+    <div class="d-flex justify-content-center align-items-center testimonial-controls">
+      <i class="bi bi-chevron-left me-3"></i>
+      <i class="bi bi-chevron-right ms-3"></i>
+    </div>
+  </div>
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+
+        <!-- Address Column -->
+        <div class="col-md-3 footer-column">
+          <img src="./assets/logo.png" alt="Logo" style="width: 50px; height: auto;">
+          <p>Satya Sai Nagar<br>Near Society Colony<br>Macherla - 522426,<br>Guntur District, Andhra
+            Pradesh.
+          </p>
+          <p> 9704255536, 9704968368</p>
+        </div>
+
+        <!-- Our Services Column -->
+        <div class="col-md-3 footer-column">
+          <h5>Our Services</h5>
+          <ul>
+            <li><a href="#">Sri Satya Sai Vidya Vihar</a></li>
+            <li><a href="#">Primary Health Centre</a></li>
+            <li><a href="#">Skill Development Centre</a></li>
+          </ul>
+        </div>
+
+        <!-- Quick Links Column -->
+        <div class="col-md-3 footer-column">
+          <h5>Quick Links</h5>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Get Involved</a></li>
+            <li><a href="#">Gallery</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Social Media Column -->
+        <div class="col-md-3 footer-column">
+          <h5>Social Media</h5>
+          <ul>
+            <li><a href="#"><img src="facebook-icon.png" alt="Facebook"> sesmacherla</a></li>
+            <!-- Replace with icon paths -->
+            <li><a href="#"><img src="youtube-icon.png" alt="YouTube"> @sesmacherla</a></li>
+            <li><a href="#"><img src="instagram-icon.png" alt="Instagram"> #sesmacherla</a></li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </footer>
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
+
 </html>

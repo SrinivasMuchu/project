@@ -1,0 +1,718 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sai Educational Society Announcements</title>
+    <link rel="stylesheet" href="/styles.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <style>
+        body {
+            width: 100%;
+            margin: 0px;
+            padding: 0px;
+
+
+        }
+
+        .container {
+            padding: 0px;
+            min-width: 100%;
+            margin: 0px;
+
+            align-items: center;
+            justify-content: center;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            margin: 0px;
+        }
+
+        .download-section {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-top: 20px;
+            width: 80%;
+            box-sizing: border-box;
+
+        }
+
+        .download-item {
+            background-image: url('./assets/download-btn.png');
+            background-position: center;
+            gap: 14px;
+            color: #fff;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            padding: 15px;
+            text-align: center;
+            width: 300px;
+            font-weight: bold;
+        }
+
+        .download-item i {
+            font-size: 24px;
+            margin-bottom: 10px;
+            display: block;
+
+        }
+
+        .announcements-section {
+            text-align: center;
+            margin: 40px 0;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        .title {
+            text-align: left;
+            font: normal normal bold 24px/50px Barlow;
+            letter-spacing: 0.24px;
+            color: #003580;
+            opacity: 1;
+        }
+
+        .card-title {
+            text-align: center;
+            font: normal normal 600 33px/40px Barlow;
+            letter-spacing: 0px;
+            color: #003580;
+            opacity: 1;
+        }
+
+        .card-title1 {
+            text-align: center;
+            font: normal normal 600 28px/50px Barlow;
+            letter-spacing: 0.28px;
+            color: #2B3543;
+            opacity: 1;
+        }
+
+        .card {
+            border: none;
+            border-radius: 10px;
+        }
+
+        .faculty-section {
+            background-color: #f8f9fa;
+            width: 100%;
+            box-sizing: border-box;
+            padding: 50px 0;
+            text-align: center;
+        }
+
+        .faculty-title {
+            font-size: 24px;
+            font-weight: bold;
+            color: #000;
+        }
+
+        .faculty-card {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            margin: 20px;
+        }
+
+        .faculty-img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 10px;
+        }
+
+        .faculty-name {
+            font-size: 18px;
+            font-weight: bold;
+            color: #007bff;
+            margin: 0;
+        }
+
+        .faculty-qualifications {
+            font-size: 14px;
+            color: #f04e2a;
+        }
+
+        .pagination-dots {
+            margin-top: 20px;
+        }
+
+        .pagination-dots .dot {
+            width: 8px;
+            height: 8px;
+            background-color: #d1d8e0;
+            border-radius: 50%;
+            display: inline-block;
+            margin: 0 4px;
+        }
+
+        .program-section {
+            background: linear-gradient(135deg, #610cd4, #38a0ff);
+            color: white;
+            padding: 40px;
+            border-radius: 10px;
+        }
+
+        .program-section h2 {
+            font-weight: bold;
+        }
+
+        .carousel-control-prev-icon,
+        .carousel-control-next-icon {
+            background-color: #fff;
+            border-radius: 50%;
+            padding: 10px;
+        }
+
+        .carousel-item img {
+            border-radius: 10px;
+            width: 100%;
+            height: auto;
+        }
+
+        .description {
+            font-size: 16px;
+            line-height: 1.8;
+        }
+
+        .custom-container {
+            /* background-color: #e8f0fa; */
+            padding: 20px;
+            border-radius: 10px;
+            min-width: 80%;
+        }
+
+        .profile-img {
+            width: 100%;
+            max-width: 150px;
+            border-radius: 10px;
+        }
+
+        .text-content {
+            text-align: left;
+            font: normal normal normal 18px/30px Lato;
+            letter-spacing: 0.18px;
+            color: #2B3543;
+            opacity: 1;
+        }
+
+        .core-values-section {
+            padding: 50px 0;
+            width: 80%;
+        }
+
+        .core-values-title {
+            text-align: left;
+            font: normal normal bold 24px/30px Lato;
+            letter-spacing: 0.24px;
+            color: #003580;
+            opacity: 1;
+            margin-bottom: 30px;
+        }
+
+        .core-values-list {
+            background-color: #ffffff;
+
+            border-radius: 10px;
+            padding: 20px;
+        }
+
+        .core-value-item {
+            background: transparent linear-gradient(90deg, #F0E8FA 0%, #C8D9F7 100%) 0% 0% no-repeat padding-box;
+            border: 1px solid #003580;
+            border-radius: 12px;
+            opacity: 1;
+            padding: 15px;
+            margin-bottom: 10px;
+            color: #333;
+            font-size: 1rem;
+            font-weight: 500;
+            text-align: left;
+            font: normal normal bold 16px/50px Lato;
+            letter-spacing: 0.18px;
+            color: #2B3543;
+            opacity: 1;
+        }
+
+        .school-image {
+            max-width: 100%;
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .text-primary-head {
+            text-align: center;
+            font: normal normal bold 48px/50px Barlow;
+            letter-spacing: 0.48px;
+            color: #003580;
+            opacity: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row navbar align-items-center top-img">
+            <div class="col-md-6 d-flex align-items-center">
+                <a href="#" class="navbar-brand d-flex align-items-center">
+                    <img src="./assets/logo.png" alt="Sai Educational Society Logo" style="width: 123px;height: 91px;">
+                    <span class="ms-2 fs-4" style="width: 250px;">Sai Educational <br />Society</span>
+                </a>
+            </div>
+
+            <div class="col-md-3 text-end d-flex align-items-center">
+                <button class="btn sponsor-btn">Sponsor a Child</button>&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;
+                <p style="text-align: left;width: 300px;">For More Details Contact<br> +91 9704255536, +91
+                    9704968368</p>
+            </div>
+            <!-- <div class="col-md-3 text-end contact-info">
+                    
+                </div>
+           -->
+
+        </div>
+    </div>
+
+    <div>
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-light navbar-comp"
+            style="height: 60px;box-sizing: border-box;">
+            <div class="container-fluid">
+                <div class="collapse navbar-collapse navs-bar" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Sri Satya Sai Vidya Vihar</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Primary Health Center</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Skills Development Center</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Get Involved</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Gallery</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <img src="./assets/page-3img.jpg" alt="" width="100%" height="400px" />
+    <div class="container" style="width: 100%;">
+        <!-- Download Section -->
+        <div class="row custom-container">
+            <div class="col-md-3 d-flex justify-content-center align-items-center">
+                <img src="image.png" alt="Profile" class="profile-img">
+            </div>
+            <div class="col-md-9 text-content">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat.</p>
+            </div>
+        </div>
+        <div style="width: 80%;">
+            <div class="text-left">
+                <h1 class="title">SRI SATHYA SAI VIDYA VIHAR</h1>
+            </div>
+            <div class="content text-content">
+                <p>Established in 2006, our school is dedicated to providing free education to all deserving students
+                    regardless of their religion, creed, or social status. Occupying a spacious 2-acre campus, our
+                    facilities include airy classrooms and extensive playgrounds designed to enhance the learning
+                    experience.</p>
+                <p>Originally serving 40 students, our institution now educates 450 children from kindergarten through
+                    10th grade, all from underprivileged communities in the surrounding areas. We are committed to not
+                    only delivering quality education but also fostering the comprehensive development of our students,
+                    ensuring they evolve into well-rounded individuals. Thanks to our exceptional staff and facilities,
+                    our school consistently achieves outstanding results in State Board Examinations.</p>
+                <p>Our core mission is to provide education imbued with high moral values, echoing the philosophy that
+                    "the end of education is character." Our faculty consists of 20 highly qualified and experienced
+                    teachers covering education from L.K.G. to X class. To date, we have maintained a 100% pass rate in
+                    the SSC Public Examinations across five batches, with our sixth batch currently preparing for their
+                    assessments.</p>
+                <p>Our curriculum is enriched with the teaching of moral values, Vedam, Kuchipudi dance, karate, yoga,
+                    music, and art & craft alongside academic studies. This holistic approach to education has earned
+                    our school the honor of being designated as a LIGHTHOUSE SCHOOL, receiving technical and academic
+                    support from the Sri Sathya Sai Vidya Vahini project—a vision of Bhagawan Sri Sathya Sai Baba. This
+                    support has enabled us to upgrade all our classrooms to digital learning environments.</p>
+            </div>
+            <div class="row mt-4 logos">
+                <div class="col-md-6 text-center mb-3">
+                    <img src="logo1.png" alt="Logo 1">
+                </div>
+                <div class="col-md-6 text-center mb-3">
+                    <img src="logo2.png" alt="Logo 2">
+                </div>
+            </div>
+        </div>
+
+        <div class="core-values-section">
+            <div class="core-values-title">The core values of our school are as follows:</div>
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="core-values-list">
+                        <div class="core-value-item">Providing free education to the socially and economically
+                            disadvantaged in our region.</div>
+                        <div class="core-value-item">Encouraging comprehensive personal development to foster
+                            well-rounded personalities.</div>
+                        <div class="core-value-item">Cultivating a spirit of unselfish service to society, contributing
+                            to societal upliftment.</div>
+                        <div class="core-value-item">Guiding young minds towards righteousness through education
+                            reinforced by faith.</div>
+                        <div class="core-value-item">Developing self-confidence anchored in a belief in the divine.
+                        </div>
+                        <div class="core-value-item">Instilling respect for traditional values, and humility towards
+                            parents and elders.</div>
+                        <div class="core-value-item">Enhancing communication skills and fostering healthy social
+                            relationships among students.</div>
+                    </div>
+                </div>
+                <div class="col-md-4 text-center">
+                    <img src="school_image.jpg" alt="School Image" class="school-image">
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-4">
+                <div class="program-section">
+                    <h2>Programs & Events</h2>
+                    <p class="description">
+                        Sri Sathya Sai Vidya Vihar are dynamic, spirited, and always keen to make the best use of the
+                        varied opportunities that today’s schooling environment provides them. We encourage them to take
+                        part in various extra-curricular activities that let them compete with students from other
+                        schools.
+                    </p>
+                    <div id="carouselControls" class="carousel slide" data-ride="carousel">
+
+                        <a class="carousel-control-prev" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselControls" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-8">
+                <div class="row" style="flex-wrap: nowrap;overflow-x: hidden;">
+                    <div class="col-md-6 mb-3">
+                        <img src="event1.jpg" alt="Event Image 1" class="img-fluid rounded">
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <img src="event2.jpg" alt="Event Image 2" class="img-fluid rounded">
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <img src="event2.jpg" alt="Event Image 2" class="img-fluid rounded">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="faculty-section">
+            <p class="faculty-title">Sai Educational Society<br>Faculty</p>
+            <!-- <div class="container"> -->
+            <div class="row justify-content-center">
+                <div class="col-md-3 faculty-card">
+                    <img src="./assets/pdf-icon.png" alt="Sumathi" class="faculty-img">
+                    <p class="faculty-name">Sumathi</p>
+                    <p class="faculty-qualifications">M.A, B.Ed</p>
+                </div>
+                <div class="col-md-3 faculty-card">
+                    <img src="./assets/pdf-icon.png" alt="Sk Karomoon" class="faculty-img">
+                    <p class="faculty-name">Sk Karomoon</p>
+                    <p class="faculty-qualifications">M.A, B.Ed</p>
+                </div>
+                <div class="col-md-3 faculty-card">
+                    <img src="./assets/pdf-icon.png" alt="J. Sai Lakshmi" class="faculty-img">
+                    <p class="faculty-name">J. Sai Lakshmi</p>
+                    <p class="faculty-qualifications">M.A, H.P.T</p>
+                </div>
+                <div class="col-md-3 faculty-card">
+                    <img src="./assets/pdf-icon.png" alt="Bhararti" class="faculty-img">
+                    <p class="faculty-name">Bhararti</p>
+                    <p class="faculty-qualifications">M.SC, B.Ed</p>
+                </div>
+            </div>
+            <div class="pagination-dots">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+            <!-- </div> -->
+        </div>
+
+        <div class="download-section">
+            <div class="download-item">
+                <img src="./assets/pdf-icon.png" style="width: 50px;height: 50px;" alt="" />
+                Download Magazine
+            </div>
+            <div class="download-item">
+                <img src="./assets/pdf-icon.png" style="width: 50px;height: 50px;" alt="" />
+                School Results
+            </div>
+            <div class="download-item">
+                <img src="./assets/pdf-icon.png" style="width: 50px;height: 50px;" alt="" />
+                School Calendar
+            </div>
+        </div>
+
+
+        <div class="announcements-section">
+            <h2 class="card-title1">Sai Educational Society</h2>
+            <h3 class="text-primary-head">Announcements</h3>
+        </div>
+
+
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Yoga Class">
+                    <div class="card-body text-center">
+                        <p class="card-title">Yoga Class Conducted</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Arka Media Works">
+                    <div class="card-body text-center">
+                        <p class="card-title">Arka Media Works Donated for School Building</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Certificates Given">
+                    <div class="card-body text-center">
+                        <p class="card-title">Given 10th Class Students Certificates</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+   
+        <div class="row">
+            <!-- Education Section -->
+            <div class="col-md-4 section common-edu" style="background-image: url('./assets/gallery1.png');">
+                <div class="overlay">
+                    <div>
+                        <h2 class="text-head">Education</h2>
+                        <p>We believe education is the foundation of development and prosperity. Our primary initiative,
+                            Sri Sathya Sai Vidya Vihar, focuses on providing high-quality education to children from
+                            underprivileged sections of the community. By eliminating financial barriers, we offer
+                            free educational resources, scholarships, and comprehensive support to foster an environment
+                            where learning thrives. Our innovative educational
+                            strategies are designed to prepare young minds for a future where they can be adaptive,
+                            thoughtful, and impactful.</p>
+                    </div>
+                </div>
+                <h2 class="text-center">Education</h2>
+            </div>
+
+            <!-- Health Care Section -->
+            <div class="col-md-4 section common-edu" style="background-image: url('./assets/gallery2.png');">
+                <div class="overlay">
+                    <div>
+                        <h2 class="text-head">Health Care</h2>
+                        <p>Good health underpins societal well-being and productivity. Our Primary Health Centre
+                            delivers essential healthcare services at no cost, encompassing medical consultations,
+                            screenings, and treatments. Our dedicated healthcare team is relentless
+                            in their pursuit of wellness and preventive care, ensuring accessible and quality medical
+                            attention for all.</p>
+                    </div>
+                </div>
+                <h2 class="text-center">Health Care</h2>
+            </div>
+
+            <!-- Skill Development Centre Section -->
+            <div class="col-md-4 section common-edu" style="background-image: url('./assets/gallery3.png');">
+                <div class="overlay">
+                    <div>
+                        <h2 class="text-head">Skill Development Centre</h2>
+                        <p>In today’s world, relevant skills are the keys to personal and professional success.
+                            SES’s Skill Development Centre provides free vocational training, workshops, and mentorship,
+                            enhancing job readiness and entrepreneurial spirit.
+                            By empowering individuals with necessary skills, we are building a more inclusive and
+                            prosperous society.</p>
+                    </div>
+                </div>
+                <h2 class="text-center">Skill Development Centre</h2>
+            </div>
+        </div>
+   
+    <section class="gallery-section">
+        <div class="container">
+            <div class="d-flex justify-content-between align-items-center mb-3">
+                <div class="gallery-title">Sai Educational Society <br><span class="text-primary">Gallery</span></div>
+                <a href="#" class="gallery-btn">VIEW ALL</a>
+            </div>
+
+            <div id="galleryCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="d-flex justify-content-center">
+                            <img src="./assets/gallery1.png" class="gallery-item img-fluid rounded" alt="Event 1"
+                                style="max-height: 300px;">
+                            <img src="./assets/gallery2.png" class="gallery-item img-fluid rounded" alt="Event 1"
+                                style="max-height: 300px;">
+                            <img src="./assets/gallery3.png" class="gallery-item img-fluid rounded" alt="Event 1"
+                                style="max-height: 300px;">
+                        </div>
+
+                    </div>
+                    <div class="carousel-item">
+                        <div class="d-flex justify-content-center">
+                            <img src="./assets/gallery2.png" class="gallery-item img-fluid rounded" alt="Event 1"
+                                style="max-height: 300px;">
+                            <img src="./assets/gallery1.png" class="gallery-item img-fluid rounded" alt="Event 1"
+                                style="max-height: 300px;">
+
+                            <img src="./assets/gallery3.png" class="gallery-item img-fluid rounded" alt="Event 1"
+                                style="max-height: 300px;">
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="d-flex justify-content-center">
+                            <img src="./assets/gallery2.png" class="gallery-item img-fluid rounded" alt="Event 1"
+                                style="max-height: 300px;">
+                            <img src="./assets/gallery1.png" class="gallery-item img-fluid rounded" alt="Event 1"
+                                style="max-height: 300px;">
+
+                            <img src="./assets/gallery3.png" class="gallery-item img-fluid rounded" alt="Event 1"
+                                style="max-height: 300px;">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Carousel Indicators -->
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#galleryCarousel" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#galleryCarousel" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#galleryCarousel" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="container-fluid" style="width: 100%;display: flex;align-items: center;justify-content: center;">
+        <section class="overlay-section">
+
+            <div class="overlay-content">
+                <h2>Embark with us on this transformative journey to<br> educate, heal, and empower.
+                    Together, we can<br> build a world that is full of opportunities.</h2>
+                <button class="btn sponsor-btn">Donate Now</button>
+            </div>
+        </section>
+    </div>
+
+
+    <div class="testimonial-section">
+        <h2 class="text-muted">Sai Educational Society</h2>
+        <p class="testimonial-title">Testimonials</p>
+        <p class="testimonial-content">
+            Lorem ipsum dolor sit amet, consectetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
+            labore
+            et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea
+            rebum.
+            Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+        </p>
+        <div class="d-flex justify-content-center align-items-center testimonial-controls">
+            <i class="bi bi-chevron-left me-3"></i>
+            <i class="bi bi-chevron-right ms-3"></i>
+        </div>
+    </div>
+    <footer class="footer">
+      
+            <div class="row">
+
+                <!-- Address Column -->
+                <div class="col-md-3 footer-column">
+                    <img src="./assets/logo.png" alt="Logo" style="width: 50px; height: auto;">
+                    <p>Satya Sai Nagar<br>Near Society Colony<br>Macherla - 522426,<br>Guntur District, Andhra
+                        Pradesh.
+                    </p>
+                    <p> 9704255536, 9704968368</p>
+                </div>
+
+                <!-- Our Services Column -->
+                <div class="col-md-3 footer-column">
+                    <h5>Our Services</h5>
+                    <ul>
+                        <li><a href="#">Sri Satya Sai Vidya Vihar</a></li>
+                        <li><a href="#">Primary Health Centre</a></li>
+                        <li><a href="#">Skill Development Centre</a></li>
+                    </ul>
+                </div>
+
+                <!-- Quick Links Column -->
+                <div class="col-md-3 footer-column">
+                    <h5>Quick Links</h5>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Get Involved</a></li>
+                        <li><a href="#">Gallery</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Social Media Column -->
+                <div class="col-md-3 footer-column">
+                    <h5>Social Media</h5>
+                    <ul>
+                        <li><a href="#"><img src="facebook-icon.png" alt="Facebook"> sesmacherla</a></li>
+                        <!-- Replace with icon paths -->
+                        <li><a href="#"><img src="youtube-icon.png" alt="YouTube"> @sesmacherla</a></li>
+                        <li><a href="#"><img src="instagram-icon.png" alt="Instagram"> #sesmacherla</a></li>
+                    </ul>
+                </div>
+
+            </div>
+       
+    </footer>
+    <!-- Font Awesome Icons -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.4.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
