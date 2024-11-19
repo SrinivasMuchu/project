@@ -160,6 +160,96 @@
       display: none;
 
     }
+
+    .media-section {
+      text-align: center;
+      padding: 50px 0;
+      width: 100%;
+      padding-left: 5%;
+      background: transparent linear-gradient(270deg, #2C6AF6 0%, #6A10CB 100%) 0% 0% no-repeat padding-box;
+    }
+
+    .media-title {
+      font-size: 2rem;
+      font-weight: bold;
+      margin-bottom: 30px;
+    }
+
+    .media-container {
+      display: flex;
+      overflow-x: auto;
+      scroll-behavior: smooth;
+      gap: 20px;
+      padding: 20px;
+      -ms-overflow-style: none;
+      /* For IE and Edge */
+      scrollbar-width: none;
+      /* For Firefox */
+    }
+
+    .media-container img {
+      width: 400px;
+      height: 300px;
+    }
+
+    .media-container::-webkit-scrollbar {
+      display: none;
+      /* Hide scrollbar for Chrome, Safari, and Opera */
+    }
+
+    /* .btn {
+      text-align: center;
+      font: normal normal 600 28px/50px Barlow;
+      letter-spacing: 0.28px;
+      color: #2B3543;
+      opacity: 1;
+      height: 75px;
+    } */
+
+    .financial-reports {
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding-top: 50px;
+      /* margin-top: 50px; */
+      background: white;
+    }
+
+    .financial-reports h1 {
+      font-size: 2rem;
+      color: #0d6efd;
+    }
+
+    .financial-reports .btn {
+      width: 200px;
+      height: 60px;
+      margin: 10px;
+      font-size: 1rem;
+      font-weight: bold;
+      border: 1px solid #ddd;
+      text-align: center;
+      /* font: normal normal 600 28px/50px Barlow; */
+      letter-spacing: 0.28px;
+      color: #2B3543;
+      opacity: 1;
+      
+
+    }
+    .financial-reports .btn:hover {
+        background: transparent linear-gradient(90deg, #FF0844 0%, #FF8365 100%) 0% 0% no-repeat padding-box;
+        border: inherit;
+        color: white;
+
+    }
+    .items-financial{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      width: 60%;
+    }
   </style>
 </head>
 
@@ -888,7 +978,7 @@
           </div>
         </div>
       </div>
-    
+
     </div>
   </div>
   <div class="container">
@@ -896,49 +986,112 @@
       <!-- Education Section -->
       <div class="col-md-4 section common-edu" style="background-image: url('./assets/gallery1.png');">
         <div class="overlay">
-            <div>
-                <h2 class="text-head">Education</h2>
-                <p>We believe education is the foundation of development and prosperity. Our primary initiative,
-                    Sri Sathya Sai Vidya Vihar, focuses on providing high-quality education to children from
-                    underprivileged sections of the community. By eliminating financial barriers, we offer
-                    free educational resources, scholarships, and comprehensive support to foster an environment
-                    where learning thrives. Our innovative educational
-                    strategies are designed to prepare young minds for a future where they can be adaptive,
-                    thoughtful, and impactful.</p>
-            </div>
+          <div>
+            <h2 class="text-head">Education</h2>
+            <p>We believe education is the foundation of development and prosperity. Our primary initiative,
+              Sri Sathya Sai Vidya Vihar, focuses on providing high-quality education to children from
+              underprivileged sections of the community. By eliminating financial barriers, we offer
+              free educational resources, scholarships, and comprehensive support to foster an environment
+              where learning thrives. Our innovative educational
+              strategies are designed to prepare young minds for a future where they can be adaptive,
+              thoughtful, and impactful.</p>
+          </div>
         </div>
         <h2 class="text-center">Education</h2>
-    </div>
+      </div>
 
-    <!-- Health Care Section -->
-    <div class="col-md-4 section common-edu" style="background-image: url('./assets/gallery2.png');">
+      <!-- Health Care Section -->
+      <div class="col-md-4 section common-edu" style="background-image: url('./assets/gallery2.png');">
         <div class="overlay">
-            <div>
-                <h2 class="text-head">Health Care</h2>
-                <p>Good health underpins societal well-being and productivity. Our Primary Health Centre
-                    delivers essential healthcare services at no cost, encompassing medical consultations,
-                    screenings, and treatments. Our dedicated healthcare team is relentless
-                    in their pursuit of wellness and preventive care, ensuring accessible and quality medical
-                    attention for all.</p>
-            </div>
+          <div>
+            <h2 class="text-head">Health Care</h2>
+            <p>Good health underpins societal well-being and productivity. Our Primary Health Centre
+              delivers essential healthcare services at no cost, encompassing medical consultations,
+              screenings, and treatments. Our dedicated healthcare team is relentless
+              in their pursuit of wellness and preventive care, ensuring accessible and quality medical
+              attention for all.</p>
+          </div>
         </div>
         <h2 class="text-center">Health Care</h2>
-    </div>
+      </div>
 
-    <!-- Skill Development Centre Section -->
-    <div class="col-md-4 section common-edu" style="background-image: url('./assets/gallery3.png');">
+      <!-- Skill Development Centre Section -->
+      <div class="col-md-4 section common-edu" style="background-image: url('./assets/gallery3.png');">
         <div class="overlay">
-            <div>
-                <h2 class="text-head">Skill Development Centre</h2>
-                <p>In today’s world, relevant skills are the keys to personal and professional success.
-                    SES’s Skill Development Centre provides free vocational training, workshops, and mentorship,
-                    enhancing job readiness and entrepreneurial spirit.
-                    By empowering individuals with necessary skills, we are building a more inclusive and
-                    prosperous society.</p>
-            </div>
+          <div>
+            <h2 class="text-head">Skill Development Centre</h2>
+            <p>In today’s world, relevant skills are the keys to personal and professional success.
+              SES’s Skill Development Centre provides free vocational training, workshops, and mentorship,
+              enhancing job readiness and entrepreneurial spirit.
+              By empowering individuals with necessary skills, we are building a more inclusive and
+              prosperous society.</p>
+          </div>
         </div>
         <h2 class="text-center">Skill Development Centre</h2>
+      </div>
     </div>
+  </div>
+  <div class="media-section">
+    <div class="media-title">Sai Educational Society Media</div>
+    <div class="media-container">
+
+      <img src="./assets/gallery1.png" alt="Media 1">
+
+
+
+      <img src="./assets/gallery1.png" alt="Media 1">
+
+
+
+      <img src="./assets/gallery1.png" alt="Media 1">
+
+
+
+      <img src="./assets/gallery1.png" alt="Media 1">
+
+
+
+      <img src="./assets/gallery1.png" alt="Media 1">
+
+
+
+      <img src="./assets/gallery1.png" alt="Media 2">
+
+
+
+      <img src="./assets/gallery1.png" alt="Media 3">
+
+
+
+      <img src="./assets/gallery1.png" alt="Media 4">
+
+
+    </div>
+  </div>
+  <div class="financial-reports">
+    <h5>Sai Educational Society</h5>
+    <h1>Statutory Approvals</h1>
+    <div class="d-flex gap-3 items-financial">
+      <button type="button" class="btn btn-outline-secondary">NGO Darpan</button>
+      <button type="button" class="btn btn-outline-secondary">Registration Certificate</button>
+      <button type="button" class="btn btn-outline-secondary">Memorandum of Association Rev.1</button>
+      <button type="button" class="btn btn-outline-secondary">CSR 1 Approval</button>
+      <button type="button" class="btn btn-outline-secondary">12A</button>
+      <button type="button" class="btn btn-outline-secondary">80G</button>
+      
+    </div>
+  </div>
+  <div class="financial-reports">
+    <h5>Sai Educational Society</h5>
+    <h1>Financial Reports</h1>
+    <div class="d-flex gap-3 items-financial">
+      <button type="button" class="btn btn-outline-secondary">AR 2023-2024</button>
+      <button type="button" class="btn btn-outline-secondary">IR 2022-2023</button>
+      <button type="button" class="btn btn-outline-secondary">AR 2021-2022</button>
+      <button type="button" class="btn btn-outline-secondary">Balance Sheet 2021-2022</button>
+      <button type="button" class="btn btn-outline-secondary">AR 2020-2021</button>
+      <button type="button" class="btn btn-outline-secondary">AR 2019-2020</button>
+      <button type="button" class="btn btn-outline-secondary">AR 2018-2019</button>
     </div>
   </div>
   <section class="gallery-section">
